@@ -1,0 +1,6 @@
+<ul class="list-group">
+    <!--<a routerLink ="/home" class="list-group-item">home</a>
+    <a routerLink ="/about" class="list-group-item">about</a>
+    <a routerLink ="/contacto" class="list-group-item">contacto</a>-->
+    <a routerLink="{{ruta.path}}" class="list-group-item" *ngFor="let ruta of rutas">{{ruta.name}}</a>
+</ul>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularBases"
+    }
+  },
+  "defaultProject": "AngularBases",
+  "cli": {
+    "analytics": false
+  }
 }
