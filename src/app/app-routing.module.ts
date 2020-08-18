@@ -20,8 +20,8 @@ const routes: Routes = [
   },
   {
     path: 'posts',
-    // component: PostsComponent
-    loadChildren: './pages/posts/posts.module#PostsModule'
+     component: PostsComponent
+    //loadChildren: './pages/posts/posts.module#PostsModule'
   },
   {
     path: '**',
@@ -36,7 +36,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
 
   ],
-  exports:[
+  exports: [
     RouterModule
 
   ]
