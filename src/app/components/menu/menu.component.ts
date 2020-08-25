@@ -20,7 +20,7 @@ path: '/about'},
 },
 {
   name: 'Posts',
-  path: 'posts'
+  path: '/posts'
 }
 ];
 

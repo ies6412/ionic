@@ -20,8 +20,8 @@ const routes: Routes = [
   },
   {
     path: 'posts',
-     component: PostsComponent
-    //loadChildren: './pages/posts/posts.module#PostsModule'
+    // component: PostsComponent
+    loadChildren: () => import('./pages/posts/posts.module').then(m => m.PostsModule)
   },
   {
     path: '**',

@@ -1,11 +1,16 @@
-<h1>Post</h1>
-<ul class="list-group">
-    <li *ngFor=" let item of [1,1,1,1,1,1,1] " >
+<ul>
+    <app-post *ngFor="let mensaje of mensajes|async"
+            [mensaje]="mensaje" (clickPost)="Escuchaclik( $event)"
+            ></app-post>
 
-        <h2>Título</h2>
-        <p>Hola mundo</p>
-    </li>
 
-        
-    
+   <!--<li *ngFor="let mensaje of mensajes|async">
+        <ul>
+            <h1>{{mensaje.title}}</h1>
+
+            <p>{{mensaje.body}}</p>
+
+            <p>{{mensaje.id}}</p>
+        </ul>
+    </li>-->
 </ul>
